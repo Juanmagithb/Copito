@@ -1,5 +1,14 @@
-# Copito
-Una breve descripción de la oferta de productos y/o servicios ofrecidos por su
-sitio. También agregar una breve descripción del público al que apunta el sitio.
 
-Una breve descripción de los integrantes del equipo.
+# COPITO MOBILE
+
+Plataforma de consulta e interaccion de compra por mayor y menor de todos nuestros productos helados, tanto en palito como cremas artesanales
+
+## Apendice
+
+Desarrollo mobile, nuestro equipo esta trabajando para optimizar su servicio
+
+
+## Autores del proyecto
+
+- [@23LucasMRosales](https://github.com/23LucasMRosales)
+
