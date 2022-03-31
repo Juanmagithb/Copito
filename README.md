@@ -12,4 +12,4 @@ Desarrollo mobile, nuestro equipo esta trabajando para optimizar su servicio.
 
 - [@23LucasMRosales](https://github.com/23LucasMRosales)
 
-- [@facundishi]  (https://github.com/facundishi)
+- [@facundishi](https://github.com/facundishi)
