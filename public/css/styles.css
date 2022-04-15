@@ -1,0 +1,348 @@
+/* colors */
+/* #5b3363 violeta
+#e92e63 rosado
+#57c1c5 celeste claro
+#10979c celeste oscuro
+#f8a71b amarillo */
+
+*{
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+/* header */
+
+header{
+    background-color: #EAC926;
+}
+
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 12px;
+}
+
+header a {
+    color:#000;
+    cursor:grab;
+    text-decoration:none;
+    padding: 20px;;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+div.top-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5%;
+    align-items: center;
+    /* width: 100%; */
+    
+}
+
+
+header section p{
+    width: 30%;
+    text-align: center;
+    margin-top: 10px;
+    
+}
+
+nav{
+    display: none;
+}
+
+
+
+header section.logo{
+    padding: 10px;
+    width: 40%;
+}
+
+header .form{
+    display: flex;
+    align-items:center;
+    padding: 2px;
+    
+}
+
+
+header .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+
+header .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+
+/* Products */
+
+div.last-visit,
+div.offers{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.price{
+    font-size: 18px;
+    width: 30%;
+}
+
+.discount{
+   
+    font-size: 14px;
+    right: 20%;
+}
+
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+
+
+h3,
+.description{
+    color: #666;
+}
+
+.description{
+    display: none;
+    margin-top: 20px;
+}
+
+.item:hover .description{
+    display: block;
+    padding-top: 1rem;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    transition:
+    ease-out transform 0.5s,
+    ease-out right 0.5s;
+}
+
+.item:hover i{
+    transform: rotateZ(360deg);
+    right: 20%;
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+article div.main-article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+
+
+
+
+
+
+/* burger-menu */
+
+
+div.burger-menu{
+    padding-bottom: 1rem;
+    color: white;
+    width: 100%;
+
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+div.burger-menu i{
+
+    padding: 0.5rem;
+    border-radius: 15%;
+    background-color: #0022AA;
+
+}
+
+
+/* footer */
+
+footer{
+    background-color: white;
+}
+
+footer h4{
+    font-size: 16px; 
+}
+
+footer h5{
+
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 1rem 1rem;
+    
+}
+
+.sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer div section.fs {
+    padding: 2rem 3rem;
+    text-align: center;
+    max-width: 30rem;
+}
+
+footer div section i{
+    color: #03264C;
+    font-size: 30px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+}
+
+footer div section i:hover{
+    color: #0022AA;
+}
+
+/* MEDIA QUERY TABLET */
+
+@media (min-width: 361px){
+
+    /* main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    } */
+
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    main section div.products article{
+        width: 45%;
+    }
+
+    .price,
+    .discount{
+        width: 50%;
+    }
+
+    .logo{
+        width: 30%;
+    }
+
+    .item:hover{
+        box-shadow : 0px 0px 10px rgb(100 , 100 , 100);
+    }
+
+
+}
+
+/* Media Queries DESKTOP */
+
+@media (min-width: 769px){
+    main section div.products article{
+        width: 22%;
+    }
+
+    .sec{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-bottom: 1.5rem;
+        
+    } 
+    
+    
+    .sec2
+    .sec3{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-direction:block;
+    
+    
+    } 
+
+    .imput
+    .submit{
+        width: 30%;
+    }
+
+
+    div.burger-menu{
+        display: none;
+    }
+
+}
+

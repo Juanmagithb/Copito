@@ -1,27 +1,32 @@
 //antes de empezar colocar npm install
 
 const express = require ("express");
-const req = require("express/lib/request");
-const res = require("express/lib/response");
 const app = express();
+app.use(express.static('public'));
 
-const path = require("path");
 
-app.listen (3030,()=> console.log("Servidor corriendo http://localhost:3030"));
+app.listen(process.env.PORT || 3000, function (){
+    console.log('Servidor funcionando en el puerto http://localhost:3000');
+});
+
 
 app.get('/',(req,res)=>{ 
-    res.sendFile(path.resolve(__dirname,'./views/index.html'));
+    res.sendFile(__dirname +'/views/index.html');
 });
 
 app.get('/login',(req,res)=>{
-    res.sendFile(path.resolve(__dirname,'./views/login.html'));
+    res.sendFile(__dirname +'/views/login.html');
 });
 app.get('/register',(req,res)=>{
-    res.sendFile(path.resolve(__dirname,'./views/register.html'));
+    res.sendFile(__dirname +'/views/register.html');
 });
-app.get('/products',(req,res)=>{
-    res.sendFile(path.resolve(__dirname,'./views/products.html'));
+app.get('/product1',(req,res)=>{
+    res.sendFile(__dirname +'/views/product1.html');
 });
 app.get('/cart',(req,res)=>{
-    res.sendFile(path.resolve(__dirname,'./views/cart.html'));
+    res.sendFile(__dirname +'/views/cart.html');
+});
+
+app.post('/', (req,res)=>{
+    res.send('Registro exitoso');
 });
