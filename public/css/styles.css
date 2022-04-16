@@ -36,7 +36,7 @@ header div.logo{
 
 
 header a {
-    color:#000;
+    color:#5b3363;
     cursor:grab;
     text-decoration:none;
     padding: 20px;;
@@ -56,31 +56,38 @@ nav{
 }
 
 
-
-
-header .form{
+.barra-busqueda{
+    background-color: #E0ECEC;
+    width: 100%;
+    align-self: center;
     display: flex;
-    padding: 2px;
-    justify-content: center;
+    border-radius: 4px;
+    justify-content: space-evenly;
+    color: #5b3363;
     margin-bottom: 2%;
 }
 
-
-header .input{
-    background-color: #FFF;
-    border: 1px solid #000;
-    outline: none;
-    color: #666;
-    padding: 2px;
+.barra-busqueda form{
+    /* width: 40%; */
+    display: flex;
+    align-items: center;
 }
 
-header .submit{
-    background-color: #FFF;
-    border: 1px solid #000;
-    outline: none;
-    color: #666;
-    padding: 2px;
+.campo-busqueda{
+    /* width: 40%; */
+    display: inline;
 }
+
+
+
+.lupa{
+    background-color: #E0ECEC;
+    justify-self: flex-end;
+    display: inline;
+    color: #5b3363;
+}
+
+
 
 /* Products */
 

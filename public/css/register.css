@@ -1,0 +1,90 @@
+.register{
+    background-color: #57c1c5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    
+}
+
+.formreg{
+    width: 25%;
+    margin: 1rem 0;
+}
+
+.zone{
+    display: block;
+    margin-bottom: 2rem;
+    width: 100%;
+    background-color: #E0ECEC;
+    border-radius: 4px;
+    
+}
+
+.zone input{
+    width: 100%;
+    height: 100%;
+    padding: 0.75rem 0;
+    display: flex;
+    text-align: center;
+}
+
+.birthdate{
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.bithdate label h2{
+    margin-bottom: 1rem;
+    text-align: center;
+
+}
+
+.bithdate input{
+    background-color: #E0ECEC;
+    border-radius: 4px;
+    text-align: center;
+}
+
+
+
+.button2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.registerbutton, .erasebutton{
+    width: 45%;
+}
+
+.registerbutton button, .erasebutton button{
+    width: 100%;
+    padding: 0.75rem;
+    background-color:#5b3363;
+    border-radius: 4px;
+    color: #E0ECEC;
+}
+
+.registerbutton:hover button, .erasebutton:hover button{
+    background-color: #e92e63;
+    cursor: pointer;
+}   
+
+main h4{
+    text-align: center;
+}
+
+div label{
+    text-align: center;
+}
+
+
+@media (min-width: 769px){
+
+    
+}

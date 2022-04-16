@@ -1,15 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/styles.css">
-    <title>Registro</title>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Bienvenidxs a MercadoLiebre</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/register.css">
+    </head>
+    <body>
+        <header>
+            
 
-</head>
-    <h1>En desarrollo</h1>
-    <a href="/"><button>Volver</button></a>
-<body>
+            <div class="logo"> 
+                <img src="images/logo.svg" alt="Logo de copito">
+            </div>
+
+            <section class="barra-busqueda">
+                <form action="" method="POST">
+                    <div class="campo-busqueda">
+                        <input type="text" placeholder="Buscá productos, marcas y más" required>
+                    </div>
+
+                    <div class="lupa">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </div>
+                </form>
+            </section>
+
+        
+
+        <nav>
+                   
+            <div="sec3">  
+                    
+                <a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a>
+                <a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a>
+                <a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a>
+                
+            <div> 
+        
+         </nav>
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+        <!-- <section class="banner">
+            <img src="images/img-home-banner.jpg" alt="Banner de ofertas">
+        </section> -->
+        <main class="register">
+            <form action="/" method="POST" class="formreg">
+
+                    <br><h4>Datos del usuario</h4><br>
+
+                    <div class="zone"><input type="text" name="name" placeholder="Nombre y apellido" required minlength="8"></div>
+
+                    <div class="zone"><input type="text" name="user" placeholder="Nombre de usuario" required></div>
+
+                    <div class="zone"><input type="email" name="email" placeholder="E-mail" required></div>
+
+                    <div class="zone"><input type="text" name="addres" placeholder="Domicilio" required></div>
+
+                    <div class="birthdate">    
+                        <br>
+                        <label for="birth_date"><h4>Fecha de nacimiento</h4></label><br>
+                        <br>
+                        <input type="date" name="birth_date" id="birth_date" required>
+                        <br>
+                    </div>
+
+                    <br>
+                    
+
+                    <div class="zone">
+                        <input type="password" placeholder="Contraseña" required>
+                    </div>
     
-</body>
+                    <div class="zone">
+                        <input type="password" placeholder="Confirmar contraseña" required>
+                    </div>
+
+                    
+                    <div class="button2">
+                        
+                        <div class="zone, registerbutton"><button type="submit">Enviar</button></div>
+                        
+                        <div class="zone, erasebutton"><button type="reset"> Borrar</button></div>
+                    
+                    </div>
+
+            </form>
+        </main>
+        <footer>
+            <div class="sec">
+                <section class="fs">
+                         <i class="fas fa-recycle"></i>
+                        <h4>Nuestros packaging son 100% reciclables</h4>
+                        <p>Tantos nuestros productos como nuestros packaging estan pensados para minimizar el impacto hambiental</p>
+                </section>
+               
+                <section class="fs">
+                         <i class="fas fa-truck"></i>
+                        <h4>Envios seguros</h4>
+                        <p>Los envios son realizados en vehiculos refrigerados para garantizar la calidad de nuestros productos.</p>
+                </section>
+                
+                <section class="fs">
+                        <i class="fas fa-seedling"></i>
+                        <h4>Productos de la mejor calidad</h4>
+                        <p>Todos nuestros productos estan realizados con las mejores materias primas, son %100 naturales, bajos en azucar y sin tacc. 
+                            packaging .</p>
+                </section>
+                
+            </div> 
+                <h5>Copyright © 2022 Copito S.R.L.</h5> 
+        </footer>
+    </body>
 </html>
