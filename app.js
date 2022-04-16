@@ -30,3 +30,4 @@ app.get('/cart',(req,res)=>{
 app.post('/', (req,res)=>{
     res.send('Registro exitoso');
 });
+

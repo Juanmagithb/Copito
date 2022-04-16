@@ -23,7 +23,9 @@ header{
 }
 
 h3{
-    font-size: 24px;
+    font-size: 40px;
+    text-align: center;
+    color: #5b3363
 }
 
 p{
@@ -115,7 +117,7 @@ div.offers{
 
 
 
-h3,
+
 .description{
     color: #5b3363
 }
@@ -158,7 +160,7 @@ main section article i{
     font-size: 16px;
     padding: 6px;
     width: 30px;
-    height: 30px;
+    height: 32px;
     border: 2px solid #e92e63;
     background-color: #E0ECEC;
     border-radius: 50%;
@@ -187,6 +189,7 @@ article div.main-article{
     border-top: 1px solid #e92e63;
     position: relative;
     padding: 15px;
+    top: -3px;
 }
 
 
