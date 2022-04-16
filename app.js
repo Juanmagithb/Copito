@@ -11,7 +11,7 @@ app.listen(process.env.PORT || 3000, function (){
 
 
 app.get('/',(req,res)=>{ 
-    res.sendFile(__dirname +'/views/index.html');
+    res.sendFile(__dirname +'/views/home.html');
 });
 
 app.get('/login',(req,res)=>{
