@@ -34,6 +34,11 @@ p{
 
 header div.logo{
     text-align: center;
+    width: 100%;
+}
+
+div img{
+    width: 70%;
 }
 
 
@@ -52,6 +57,7 @@ header section p{
     margin-top: 10px;
     
 }
+
 
 nav{
     display: none;
@@ -334,6 +340,10 @@ footer div section i:hover{
 
     div.burger-menu{
         display: none;
+    }
+
+    div img{
+        width: 30%;
     }
 
 }
