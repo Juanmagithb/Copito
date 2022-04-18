@@ -1,5 +1,6 @@
 .main-cart{
     padding: 1%;
+    
 }
 
 .main-cart p {
@@ -14,7 +15,7 @@ font-size: 12px;
 }
 
 .cart1{
-    background-color: #5b3363;
+    background-color: #00d4ff;
     display: flex;
     width: 100%;
     align-items: center;
@@ -39,7 +40,7 @@ font-size: 12px;
 
 
 .cart3{
-    background-color: #5b3363;
+    background-color: #00d4ff;
     display: flex;
     width: 100%;
     align-items: center;
