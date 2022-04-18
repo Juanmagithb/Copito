@@ -49,7 +49,8 @@ header a {
     color:#5b3363;
     cursor:pointer;
     text-decoration:none;
-    padding: 20px;;
+    padding: 5px;;
+    font-size: 15px;
 }
 
 
@@ -60,12 +61,20 @@ header section p{
     margin-top: 10px;
     
 }
-
-
 nav{
-    display: none;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+padding-bottom: 1.5rem;
 }
 
+.sec3{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-direction:column;
+    } 
 
 .barra-busqueda{
     background-color: #E0ECEC;
@@ -339,26 +348,15 @@ footer div section i:hover{
         justify-content: space-between;
         }
 
-    nav{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        padding-bottom: 1.5rem;
-        
-    } 
-
-
-
-    
+   
     
     .sec3{
-    width: 100%;
+
+    width: 30%;
     display: flex;
     justify-content: space-around;
     text-align: center;
-    flex-direction:block;
-    
-    
+
     } 
 
     .imput
@@ -384,6 +382,19 @@ footer div section i:hover{
     .logo2:hover{
         transform: scale(1.02);
     }
+
+    .sec3{
+        display: flex;
+        text-align: center;
+        flex-direction:row;
+        justify-content: space-evenly;
+        width: 70%;
+        } 
+
+        header a {
+            padding: 5px;;
+            font-size: 25px;
+        }
 
 }
 
