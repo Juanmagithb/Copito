@@ -372,16 +372,15 @@ footer div section i:hover{
         width: 30%;
     }
 
-    .logo{
+    .logo2{
         transition:
         ease-out transform 0.5s,
         ease-out right 0.5s;
     }
 
-    .logo:hover{
+    .logo2:hover{
         transform: scale(1.02);
     }
-
 
 }
 
