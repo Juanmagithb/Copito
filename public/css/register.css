@@ -9,7 +9,7 @@
 }
 
 .formreg{
-    width: 25%;
+    width: 50%;
     margin: 1rem 0;
 }
 
@@ -79,6 +79,9 @@ main h4{
     text-align: center;
 }
 
+.register h4{
+    color: #5b3363;;
+}
 div label{
     text-align: center;
 }
@@ -86,5 +89,9 @@ div label{
 
 @media (min-width: 769px){
 
-    
+    .formreg{
+        width: 25%;
+        
+    }
+
 }

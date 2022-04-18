@@ -20,11 +20,13 @@ app.get('/login',(req,res)=>{
 app.get('/register',(req,res)=>{
     res.sendFile(__dirname +'/views/register.html');
 });
-app.get('/product1',(req,res)=>{
-    res.sendFile(__dirname +'/views/product1.html');
-});
+
 app.get('/cart',(req,res)=>{
     res.sendFile(__dirname +'/views/cart.html');
+});
+
+app.get('/palito-naranja',(req,res)=>{
+    res.sendFile(__dirname +'/views/palito-naranja.html');
 });
 
 app.post('/', (req,res)=>{
