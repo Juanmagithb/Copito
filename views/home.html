@@ -21,7 +21,7 @@
                 
                     <form action="/" method="POST">
                         <div class="campo-busqueda">
-                            <input type="text" placeholder="Buscá productos" required>
+                            <input type="text" placeholder="Buscá productos" required class="buscador">
                         </div>
 
                         <div class="lupa">
@@ -46,12 +46,24 @@
         <!-- <div class="burger-menu">
             <i class="fas fa-ice-cream"></i>
         </div> -->
+        
         </header>
         <!-- <section class="banner">
             <img src="images/banner.jpg" alt="Banner de ofertas">
         </section> -->
+        <div class="contenedor-menu" id="contenedor-menu">
+            <p class="btn-abrir-menu" id="btn-abrir-menu">
+                <i class="fas fa-ice-cream"></i>
+            </p>
+                <nav class="elementos-menu">
+                <ul>
+                    <li><a href="">PRECIO<i class="fas fa-dollar-sign"></i></a></li>
+                    <li><a href="">SERVICI<i class="fas fa-lightbulb"></i>S </a></li>
+                    <li><a href="">CONTACT<i class="fas fa-assistive-listening-systems"></i>NOS </a></li>
+                </ul>
+            </nav>
+        </div>
         <main>
-            
             <section class="home-product">
                 <h3>Palitos</h3>
                 <div class="products">
@@ -273,6 +285,12 @@
             </div>
                 <!-- <h5>Copyright © 2022 Copito S.R.L.</h5>  -->
         </footer>
+        <script>
+            const menu = document.getElementById('btn-abrir-menu');
+            menu.addEventListener('click', () => {
+                document.getElementById('contenedor-menu').classList.toggle('active');
+            });
+        </script>
         
     </body>
 </html>
