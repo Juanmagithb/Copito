@@ -18,7 +18,7 @@ body{
 }
 /*menu desplegable*/
 .contenedor-menu{
-    background: orange;
+    background: linear-gradient(360deg, rgba(121,9,120,1) 0%, rgba(0,212,255,1) 64%);
     height: 100%;
     width: 100%;
     position: fixed;
@@ -116,9 +116,8 @@ header a {
     text-decoration:none;
     padding: 5px;;
     font-size: 15px;
+    
 }
-
-
 
 header section p{
     width: 30%;
@@ -468,3 +467,17 @@ footer div section i:hover{
 
 }
 
+
+@keyframes color-change {
+    0%{color: orange;}	
+    10%{color: purple;}	
+    20%{color: red;}
+    30%{color: CadetBlue;}
+    40%{color: yellow;}
+    50%{color: coral;}
+    60%{color: green;}
+    70%{color: cyan;}
+    80%{color: DeepPink;}
+    90%{color: DodgerBlue;}
+    100%{color: orange;}
+  }
