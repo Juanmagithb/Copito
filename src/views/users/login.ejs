@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+        <!-- Include Head -->
+        <%- include('../partials/head', {title: 'Login'}) %>
+        <link rel="stylesheet" href="/css/login.css">
+
+    <body>
+        <!-- Include Header -->
+        <%- include('../partials/header') %>
+
+        <main class="login">
+
+            <form action="/" method="POST" class="formlog">
+
+                <div class ="zone"><input type="text" name="user" placeholder="Nombre de usuario" required></div>
+
+                <div class ="zone"><input type="password" name="pass" placeholder="Elegí tu contraseña" required></div>
+
+                <div>
+                    <input type="checkbox" name="rec" value="a" id="a" class="otro">
+                    <label for="a" class="otro">Recordar mi usuario</label>
+                </div>
+                <br>
+                <div class ="click"><button type="submit">Enviar</button></div>
+                <br>
+
+
+                <a href="/"><h5 class="otro">¿Olvidaste tu clave?</h5></a>
+
+            </form>
+
+        </main>
+
+        <!-- Include Footer -->
+        <%- include('../partials/footer') %>
+
+        <!-- Include Scripts -->
+        <%- include('../partials/scripts') %>
+
+    </body>
+
+</html>

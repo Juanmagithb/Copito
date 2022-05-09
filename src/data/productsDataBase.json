@@ -1,0 +1,16 @@
+
+[
+    {
+     "id": 1,
+     "name": "Palito de naranja",
+     "price": 20,
+     "stock":200,
+     "pack":12,
+     "discount": 0,
+     "category": "Palitos",
+     "description": "Palito helado de agua de naranja con jugo natural exprimido.",
+     "image": "palito-naranja.jpg",
+     "image-ni": "informacion-nurtricional.png"
+    }
+
+   ]

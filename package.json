@@ -2,9 +2,9 @@
   "name": "10---copito",
   "version": "1.0.0",
   "description": "Plataforma de consulta e interaccion de compra por mayor y menor de todos nuestros productos helados, tanto en palito como cremas artesanales.",
-  "main": "app.js",
+  "main": "src/app.js",
   "scripts": {
-    "test": "node app.js"
+    "test": "nodemon src/app.js"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/Juanmagithb/Copito#readme",
   "dependencies": {
+    "ejs": "^3.1.7",
     "express": "^4.17.3",
+    "method-override": "^3.0.0",
     "nodemon": "^2.0.15"
   }
 }

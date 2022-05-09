@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+        <!-- Include Head -->
+        <%- include('../partials/head', {title: 'Detalle'}) %>
+        <link rel="stylesheet" href="/css/product.css">
+
+    <body>
+        <!-- Include Header -->
+        <%- include('../partials/header') %>
+
+        <main>
+                <h3 class="titulo2">Modificar los datos de un producto existente</h3>
+            
+
+
+                <div class="form0">
+                    <img src="/images/products/ice-crean.gif" alt="Helado de carga" class="ice-cream-load1">
+
+                    <div class="form1">
+                        <form action="/products" method="POST" >
+
+                                <div class="col-12 col-md-6">
+                                    <label for="name" class="form-label">Nombre del producto:</label>
+                                    <input type="text" id="name" name="name" placeholder="Ej: Palito de frutilla" class="form-input">
+                                </div>
+                                <br>
+                                <div class="col-12 col-md-6">
+                                    <label for="price" class="form-label">Precio del producto:</label>
+                                    <input type="number" id="price" name="price" placeholder="Ej: $200" class="form-input">
+                                </div>
+                                <br>
+                                <div class="col-12 col-md-6">
+                                    <label for="discount" class="form-label">Unidades por pack:</label>
+                                    <input type="number" id="pack" name="discount" placeholder="Ej: 6" class="form-input">
+                                </div>
+                                <br>
+                                <div class="col-12 col-md-6">
+                                    <label for="discount" class="form-label">Stock a cargar:</label>
+                                    <input type="number" id="stock" name="stock" placeholder="Ej: 50" class="form-input">
+                                </div>
+                                <br>
+                                <div class="col-12 col-md-6">
+                                    <label for="discount" class="form-label">Descuento:</label>
+                                    <input type="number" id="discount" name="discount" placeholder="Ej: 15" class="form-input">
+                                </div>
+                                <br>
+                                <div class="col-12 col-md-6">
+                                    <label for="category" class="form-label">Categoría:</label>
+                                    <select name="category" id="category" class="form-input">
+                                        <option value="">Elegí el tipo de producto</option>
+                                        <option value="in-sale">Palitos</option>
+                                        <option value="visited">Bombones</option>
+                                        <option value="visited">Postres</option>
+                                        <option value="visited">Tortas</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <div class="col-12">
+                                    <label for="description" class="form-label">Descipción:</label>
+                                    <textarea name="description" id="description" class="form-input"></textarea>
+                                </div>
+                                <br>
+                                <div class="product-img">
+                                    <label for="user-img"><h2>Imagen del producto</h2></label><br>
+                                    <input type="file" name="product-imgage" id="image" required>
+                                </div>
+                                <br>
+                                <div class="button2">
+                        
+                                    <div class="chargebutton"><button type="submit" >Guardar camvbios</button></div>
+                                    
+                                    <div class="erasebutton"><button type="reset"> Borrar Producto</button></div>
+                                
+                                </div>
+
+                            </div>
+
+                        </form>
+
+                        <img src="/images/products/ice-crean.gif" alt="Helado de carga" class="ice-cream-load2">
+                        
+                    </div>
+
+
+                    
+             
+
+        </main>
+
+        <!-- Include Footer -->
+        <%- include('../partials/footer') %>
+
+        <!-- Include Scripts -->
+        <%- include('../partials/scripts') %>
+        
+    </body>
+
+</html>

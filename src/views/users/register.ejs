@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+        <!-- Include Head -->
+        <%- include('../partials/head', {title: 'Registro'}) %>
+        <link rel="stylesheet" href="/css/register.css">
+
+    <body>
+        <!-- Include Header -->
+        <%- include('../partials/header') %>
+
+        <main class="register">
+            <form action="/" method="POST" class="formreg">
+
+                    <br><h4>Datos del usuario</h4><br>
+
+                    <div class="zone"><input type="text" name="name" placeholder="Nombre y apellido" required minlength="8"></div>
+
+                    <div class="zone"><input type="text" name="user" placeholder="Nombre de usuario" required></div>
+
+                    <div class="zone"><input type="email" name="email" placeholder="E-mail" required></div>
+
+                    <div class="zone"><input type="text" name="addres" placeholder="Domicilio" required></div>
+
+                    <div class="birthdate">    
+                        <br>
+                        <label for="birth_date"><h4>Fecha de nacimiento</h4></label><br>
+                        <br>
+                        <input type="date" name="birth_date" id="birth_date" required>
+                        <br>
+                    </div>
+
+                    <br>
+                    
+
+                    <div class="zone">
+                        <input type="password" placeholder="Contraseña" required>
+                    </div>
+    
+                    <div class="zone">
+                        <input type="password" placeholder="Confirmar contraseña" required>
+                    </div>
+
+                    
+                    <div class="button2">
+                        
+                        <div class="zone, registerbutton"><button type="submit">Enviar</button></div>
+                        
+                        <div class="zone, erasebutton"><button type="reset"> Borrar</button></div>
+                    
+                    </div>
+
+            </form>
+        </main>
+
+        <!-- Include Footer -->
+        <%- include('../partials/footer') %>
+
+        <!-- Include Scripts -->
+        <%- include('../partials/scripts') %>
+
+    </body>
+
+</html>

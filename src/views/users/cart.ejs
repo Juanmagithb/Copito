@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+        <!-- Include Head -->
+        <%- include('../partials/head', {title: 'Carrito de compras'}) %>
+        <link rel="stylesheet" href="/css/cart.css">
+
+    <body>
+        <!-- Include Header -->
+        <%- include('../partials/header') %>
+
+        <main class="main-cart">
+            <h3 class="title-cart">Tu carrito</h3>
+
+                <article class="cart1">
+                    <img src="/images/products/palito-naranja.jpg" alt="Palito 1" clas="img-cart">
+                    <div class="cart2">
+                        <h3 class="cart-product">Palito frutal Naranja</h3>
+                        <br>
+                        <p> Palito helado de agua de naranja con jugo natural exprimido.<p>
+                        <br>
+                        <div class="cart1">
+                            <p>Cantidad</p>
+                            <p>- 4 +</p>
+                            <i class="fas fa-trash"></i>
+                            
+                        </div>
+                    </div>   
+                    <p>$400</p>
+                </article> 
+
+                <article class="cart1">
+                    
+                    <img src="/images/products/bombon-crocante.jpg" alt="Palito 1" clas="img-cart">
+                    <div class="cart2">
+                        <h3 class="cart-product">Bombón Crocante</h3>
+                        <br>
+                        <p> Crema helada de dulce de leche cubierto con chocolate con leche, baño de repostería y cereal inflado.<p>
+                        <br>
+                        <div class="cart1">
+                            <p>Cantidad</p>
+                            <p>- 5 +</p>
+                            <i class="fas fa-trash"></i>
+                        
+                        </div>
+                    </div> 
+                    <p>$800</p>
+                </article> 
+
+                <article class="cart1">
+                    <img src="/images/products/cassata.jpg" alt="Palito 1" clas="img-cart">
+                    <div class="cart2">
+                        <h3 class="cart-product">Casatta</h3>
+                        <br>
+                        <p> Helado de crema sabor frutilla, chocolate y crema americana.<p>
+                        <br>
+                        <div class="cart1">
+                            <p>Cantidad</p>
+                            <p>- 2 +</p>
+                            <i class="fas fa-trash"></i>
+                            
+                        </div>
+                    </div> 
+                    <p>$2000</p>
+                </article> 
+                <article class="cart3">
+                    <img clas="img-cart">
+                    <div class="cart2"><p>Total</p></div>
+                    <p>$3200</p>
+                </article>
+                
+
+
+
+        </main>
+
+        <!-- Include Footer -->
+        <%- include('../partials/footer') %>
+
+        <!-- Include Scripts -->
+        <%- include('../partials/scripts') %>
+        
+    </body>
+    
+</html>
