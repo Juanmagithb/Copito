@@ -2,8 +2,8 @@
 
 ## Comenzar a hacer.
 
-    Mejorar/incorporar menus desplegables
-    Mejorar el home
+    Incorporar menus desplegables
+    Modificar el home y el menu de productos
     
 ## Hacer más.
 
@@ -11,8 +11,11 @@
 
 ## Continuar haciendo.
 
+    Renovar el css
 
 ## Hacer menos.
+
+    Falta de trabajo en equipo
 
 ## Dejar de hacer.
 
