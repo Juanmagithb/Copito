@@ -192,20 +192,20 @@ div.home-product{
 }
 
 .description{
-    /* font-size: 20px; */
+    font-size: 20px;
     font-weight: normal;
     color: #5b3363;
-    display: none;
+    /* display: none; */
     text-align: center;
-    /* margin-top: 20px; */
+    margin-top: 40px;
 }
 
 
 
-.item:hover .description{
+/* .item:hover .description{
     display: block;
     padding-top: 1rem;
-}
+} */
 
 section.banner img{
     width: 100%;
@@ -230,6 +230,14 @@ main section article{
 main section article img{
     width: 100%;
     border-radius: 2%;
+    transition:
+    ease-out transform 0.5s,
+    ease-out right 0.5s;
+    
+}
+
+main section article img:hover{
+    transform: scale(1.1);
 }
 
 /* main section article i,
