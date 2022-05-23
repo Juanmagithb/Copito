@@ -1,0 +1,73 @@
+.form1{
+    max-width: 700px;
+    width: 100%;
+    background: #fff;   
+    padding: 20px 30px; 
+    border-radius: 10px;
+}
+
+.form1 form .formulario{
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: space-between; 
+
+}
+
+form .formulario .details{
+    margin: 10px 0 12px 0;
+    width: calc(100% / 2 - 20px);
+}
+
+.formulario .details input{
+    height: 45px;   
+    width: 100%;
+    outline : none;
+    border-radius: 5px; 
+    border: 1px solid #ccc;
+    padding-left: 20px;
+    font-size: 14px;
+    border-bottom-width: 5px;
+    transition: all 0.3s ease;
+
+}
+
+.formulario .details input:focus
+.formulario .details input:valid{
+    border-color: blue;
+
+
+}
+
+
+
+.formulario .categoria .form-input{
+    margin: 10px 0 12px 0;
+    height: 45px;   
+    width: 100%;
+}
+
+.formulario .categoria .form-label{
+    height: 45px;   
+    width: 100%;
+}
+
+.formulario .descripcion {
+    margin: 15px 0 12px 0;
+    width: calc(100% / 2 - 20px);
+    height: 45px;   
+    width: 100%;
+}
+
+.formulario .button2{
+    margin: 40px 0 12px 0;
+
+    height: 45px;   
+    width: 100%;
+}
+
+.formulario .img{
+    margin: 10px 0 12px 0;
+    width: calc(100% / 2 - 20px);
+    height: 45px;   
+    width: 100%;
+}

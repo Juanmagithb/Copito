@@ -131,20 +131,44 @@ header section p{
     
 }
 
-nav{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding-bottom: 1.5rem;
+/* inicio nav */
+
+.menu-nav{
+    width: 100%;
+    height: 70px;
+    background: #6e1880;
+    
 }
 
 .sec3{
     width: 100%;
+    margin: 0 auto; 
     display: flex;
     justify-content: space-around;
-    text-align: center;
-    flex-direction:column;
-    } 
+    align-items: center;
+    padding: 20px 0;
+}
+
+.sec3 ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+
+    
+}
+
+.sec3 ul li a{
+    text-decoration: none;
+    color: #f8f8f8;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+
+/* fin nav */
+
+
 
 .barra-busqueda{
     /* background-color: #00d4ff; */
