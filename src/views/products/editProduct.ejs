@@ -9,7 +9,7 @@
         <%- include('../partials/header') %>
 
         <main>
-                <h3 class="titulo2">Modificar los datos de un producto existente</h3>
+                <h3 class="titulo2">Edicion de <%= productToEdit.name %></h3>
             
 
 
@@ -17,60 +17,58 @@
                     <img src="/images/products/ice-crean.gif" alt="Helado de carga" class="ice-cream-load1">
 
                     <div class="form1">
-                        <form action="/products" method="POST" >
+                        <form action="/products/edit/<%= productToEdit.id %>?_method=PATCH" method="POST" enctype="multipart/form-data" >
 
                                 <div class="col-12 col-md-6">
                                     <label for="name" class="form-label">Nombre del producto:</label>
-                                    <input type="text" id="name" name="name" placeholder="Ej: Palito de frutilla" class="form-input">
+                                    <input type="text" id="name" name="name"  class="form-input" value="<%= productToEdit.name %>">
                                 </div>
                                 <br>
                                 <div class="col-12 col-md-6">
                                     <label for="price" class="form-label">Precio del producto:</label>
-                                    <input type="number" id="price" name="price" placeholder="Ej: $200" class="form-input">
+                                    <input type="number" id="price" name="price"  class="form-input" value="<%= productToEdit.price %>">
                                 </div>
                                 <br>
                                 <div class="col-12 col-md-6">
                                     <label for="discount" class="form-label">Unidades por pack:</label>
-                                    <input type="number" id="pack" name="discount" placeholder="Ej: 6" class="form-input">
+                                    <input type="number" id="pack" name="pack"  class="form-input" value="<%= productToEdit.pack %>">
                                 </div>
                                 <br>
                                 <div class="col-12 col-md-6">
                                     <label for="discount" class="form-label">Stock a cargar:</label>
-                                    <input type="number" id="stock" name="stock" placeholder="Ej: 50" class="form-input">
+                                    <input type="number" id="stock" name="stock"  class="form-input" value="<%= productToEdit.stock %>">
                                 </div>
                                 <br>
                                 <div class="col-12 col-md-6">
                                     <label for="discount" class="form-label">Descuento:</label>
-                                    <input type="number" id="discount" name="discount" placeholder="Ej: 15" class="form-input">
+                                    <input type="number" id="discount" name="discount"  class="form-input" value="<%= productToEdit.discount %>">
                                 </div>
                                 <br>
                                 <div class="col-12 col-md-6">
                                     <label for="category" class="form-label">Categoría:</label>
-                                    <select name="category" id="category" class="form-input">
-                                        <option value="">Elegí el tipo de producto</option>
-                                        <option value="in-sale">Palitos</option>
-                                        <option value="visited">Bombones</option>
-                                        <option value="visited">Postres</option>
-                                        <option value="visited">Tortas</option>
+                                    <select name="category" id="category" class="form-input" >
+                                        <option value=""><%= productToEdit.category %></option>
+                                        <option value="Palitos">Palitos</option>
+                                        <option value="Bombones">Bombones</option>
+                                        <option value="Postres">Postres</option>
+                                        <option value="Tortas heladas">Tortas heladas</option>
                                     </select>
                                 </div>
                                 <br>
                                 <div class="col-12">
                                     <label for="description" class="form-label">Descipción:</label>
-                                    <textarea name="description" id="description" class="form-input"></textarea>
+                                    <textarea name="description" id="description" class="form-input"><%= productToEdit.description %></textarea>
                                 </div>
                                 <br>
                                 <div class="product-img">
                                     <label for="user-img"><h2>Imagen del producto</h2></label><br>
-                                    <input type="file" name="product-imgage" id="image" required>
+                                    <input type="file" name="product-imgage" id="image">
                                 </div>
                                 <br>
                                 <div class="button2">
                         
-                                    <div class="chargebutton"><button type="submit" >Guardar camvbios</button></div>
+                                    <div class="chargebutton"><button type="submit" >Guardar cambios</button></div>
                                     
-                                    <div class="erasebutton"><button type="reset"> Borrar Producto</button></div>
-                                
                                 </div>
 
                             </div>

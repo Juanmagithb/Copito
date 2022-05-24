@@ -1,33 +1,29 @@
 <!DOCTYPE html>
 <html>
         <!-- Include Head -->
-        <%- include('partials/head', {title: 'Inicio'}) %>
+        <%- include('../partials/head', {title: 'Inicio'}) %>
+        <link rel="stylesheet" href="/css/product.css">
 
     <body>
         <!-- Include Header -->
-        <%- include('partials/header') %>
-
+        <%- include('../partials/header') %>
+        <%- include('../partials/selectProduct') %>
         <main>
 
-
-            <h3>Precios especiales</h3>
-
+            <h3>Palitos</h3>
             
             <section class="home-product">
 
                 <div class="products">
                     
                     <% products.forEach(function(products){%>
-                    <% if(products.discount>0){%> 
+                        <% if(products.category=="Palitos"){%>
                     <article class="item">
                         
                         <h4 class="description"><%= products.name %></h4>
                         <a href="/products/detail/<%= products.id %>"><img src="/images/products/<%= products.image %>" alt="Palito frutal Naranja" ></a>
                         <div class="main-article">
-                                <p class="price2">$
-                                    <%= products.price * ((100 - products.discount)/ 100).toFixed(0)%>
-                                </p>
-                                <span><%= products.discount %> %OFF</span>
+                                <p class="price">$<%= products.price %></p>
                         </div>
                         
                     </article>
@@ -40,10 +36,10 @@
         </main>
 
         <!-- Include Footer -->
-        <%- include('partials/footer') %>
+        <%- include('../partials/footer') %>
 
         <!-- Include Scripts -->
-        <%- include('partials/scripts') %>
+        <%- include('../partials/scripts') %>
         
     </body>
     

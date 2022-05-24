@@ -1,0 +1,211 @@
+
+[
+    {
+     "id": 1,
+     "name": "Palito de naranja",
+     "price": 200,
+     "stock":200,
+     "pack":12,
+     "discount": 25,
+     "category": "Palitos",
+     "description": "Palito helado de agua de naranja con jugo natural.",
+     "image": "palito-naranja.png",
+     "image2": "informacion-nurtricional.png"
+    },
+
+    {
+     "id": 2,
+     "name": "Palito Frutal de Frutilla",
+     "price": 200,
+     "stock":200,
+     "pack":12,
+     "discount": 0,
+     "category": "Palitos",
+     "description": "Palito helado de agua de frutilla con jugo natural.",
+     "image": "palito-frutilla.png",
+     "image2": "informacion-nurtricional.png"
+    },
+
+    {
+     "id": 3,
+     "name": "Palito Frutal de Limón",
+     "price": 200,
+     "stock":200,
+     "pack":12,
+     "discount": 0,
+     "category": "Palitos",
+     "description": "Palito helado de agua de limon con jugo natural.",
+     "image": "palito-limon.png",
+     "image2": "informacion-nurtricional.png"
+    },
+
+    {
+     "id": 4,
+     "name": "Palito Bombón",
+     "price": 200,
+     "stock":200,
+     "pack":12,
+     "discount": 0,
+     "category": "Palitos",
+     "description": "Palito de Crema helada sabor chantilly cubierta de baño de repostería.",
+     "image": "palito-bombon.png",
+     "image2": "informacion-nurtricional.png"
+    },
+
+    {
+    "id": 5,
+    "name": "Bombón Crocante",
+    "price": 400,
+    "stock":200,
+    "pack":10,
+    "discount": 30,
+    "category": "Bombones",
+    "description": "Crema helada de dulce de leche cubierto con chocolate con leche, baño de repostería y cereal inflado",
+    "image": "bombon-crocante.png",
+    "image2": "informacion-nurtricional.png"
+    },
+
+    {
+    "id": 6,
+    "name": "Bombón Suizo",
+    "price": 400,
+    "stock":200,
+    "pack":10,
+    "discount": 0,
+    "category": "Bombones",
+    "description": "Crema helada de dulce de leche y crema americana, cubierto con baño de repostería.",
+    "image": "bombon-suizo.png",
+    "image2": "informacion-nurtricional.png"
+    },
+
+    {
+    "id": 7,
+    "name": "Bombón Escocés",
+    "price": 400,
+    "stock":200,
+    "pack":10,
+    "discount": 0,
+    "category": "Bombones",
+    "description": "Crema helada de chocolate y crema americana, con corazón de dulce de leche repostero, cubierto con baño de repostería y crocante de maní.",
+    "image": "bombon-escoces.png",
+    "image2": "informacion-nurtricional.png"
+    },
+
+    {
+    "id": 8,
+    "name": "Bombón Split",
+    "price": 400,
+    "stock":200,
+    "pack":10,
+    "discount": 0,
+    "category": "Bombones",
+    "description": "Crema helada sabor a vainilla, con un suave toque de dulce de leche, recubierta con baño de repostería.",
+    "image": "bombon-split.png",
+    "image2": "informacion-nurtricional.png"
+    },
+
+    {
+    "id": 9,
+    "name": "Casatta",
+    "price": 600,
+    "stock":200,
+    "pack":8,
+    "discount": 0,
+    "category": "Postres",
+    "description": "Helado de crema sabor frutilla, chocolate y crema americana.",
+    "image": "cassata.png",
+    "image2": "informacion-nurtricional.png"
+    },
+
+    {
+    "id": 10,
+    "name": "Almendrado",
+    "price": 600,
+    "stock":200,
+    "pack":8,
+    "discount": 0,
+    "category": "Postres",
+    "description": "Crema helada sabor americana cubierta con crocante de maní.",
+    "image": "almendrado.png",
+    "image2": "informacion-nurtricional.png"
+    },
+
+    {
+    "id": 11,
+    "name": "Crocantino",
+    "price": 600,
+    "stock":200,
+    "pack":8,
+    "discount": 20,
+    "category": "Postres",
+    "description": "Una deliciosa composición de crema helada de chocolate y dulce de leche, con corazón de dulce de leche repostero y delicado bañado de repostería.",
+    "image": "crocantino.png",
+    "image2": "informacion-nurtricional.png"
+    },
+
+    {
+    "id": 12,
+    "name": "Delicia",
+    "price": 600,
+    "stock":200,
+    "pack":8,
+    "discount": 0,
+    "category": "Postres",
+    "description": "Barra helada de crema americana y crema helada sabor chocolate con chocolate con leche con maní, relleno con dulce de leche con cacao.",
+    "image": "delicia.png",
+    "image2": "informacion-nurtricional.png"
+    },
+    
+    {
+    "id": 13,
+    "name": "Tiramisu",
+    "price": 450,
+    "stock":200,
+    "pack":1,
+    "discount": 0,
+    "category": "Tortas heladas",
+    "description": "Torta sabor tiramisú, con bizcochuelo de vainilla y almíbar con café, decorado con cacao.",
+    "image": "tiramisu.png",
+    "image2": "informacion-nurtricional.png"
+    },
+
+    {
+    "id": 14,
+    "name": "Lemon Pie",
+    "price": 450,
+    "stock":200,
+    "pack":1,
+    "discount": 0,
+    "category": "Tortas heladas",
+    "description": "Torta sabor limón, con bizcochuelo de vainilla y almíbar decorado con merengue tipo italiano.",
+    "image": "lemonpie.png",
+    "image2": "informacion-nurtricional.png"
+    },
+
+    {
+    "id": 15,
+    "name": "Chocolate",
+    "price": 450,
+    "stock":200,
+    "pack":1,
+    "discount": 0,
+    "category": "Tortas heladas",
+    "description": "Torta sabor chocolate y dulce de leche, con bizcochuelo de chocolate y almíbar decorado con ganache de chocolate y crocante de maní.",
+    "image": "semifriochocolate.png",
+    "image2": "informacion-nurtricional.png"
+    },
+
+    {
+    "id": 16,
+    "name": "Cheesecake",
+    "price": 450,
+    "stock":200,
+    "pack":1,
+    "discount": 10,
+    "category": "Tortas heladas",
+    "description": "Torta sabor mascarpone, con bizcochuelo de vainilla y almíbar decorado con pulpa de frutos del bosque.",
+    "image": "semifriochocolate.png",
+    "image2": "informacion-nurtricional.png"
+    }
+
+]

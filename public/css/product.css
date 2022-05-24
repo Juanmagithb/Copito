@@ -6,6 +6,21 @@
     padding: 2%;
 }
 
+.Filtro-Categoria{
+display: flex;
+    text-align: center;
+    margin-bottom: 2%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.product-detail-description{
+    color: #5b3363;
+    font-size: 20px;
+    text-align: center;
+}
+
 .titulo2{
     padding: 1%;
     font-size: 20px;
@@ -15,9 +30,13 @@
     
     width: 40%;
     border-radius: 2%;
-    transition:
-    ease-out transform 0.5s,
-    ease-out right 0.5s;
+    background: rgba( 255, 255, 255, 0.4 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
+    border-radius: 2%;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin: 10px 0px;
 
 }
 
@@ -101,6 +120,31 @@
     justify-content: space-between;
 }
 
+.button3{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: inherit;
+}
+
+.editbutton a{
+    text-decoration: none;
+    color: white;
+}
+
+.editbutton, .erasebutton2{
+    width: 30%;
+}
+
+
+.editbutton button, .erasebutton2 button{
+    width: 100%;
+    padding: 0.75rem;
+    background-color:#5b3363;
+    border-radius: 4px;
+    color: #E0ECEC;
+}
 
 .chargebutton, .erasebutton{
     width: 45%;
@@ -113,6 +157,12 @@
     border-radius: 4px;
     color: #E0ECEC;
 }
+
+.editbutton:hover button, .erasebutton2:hover button{
+    background-color: #e92e63;
+    cursor: pointer;
+}  
+
 
 .chargebutton:hover button, .erasebutton:hover button{
     background-color: #e92e63;
@@ -165,6 +215,5 @@ h2 {
     .ice-cream-load2, .ice-cream-load1{
         display: flex;;
     }
-
 
 }

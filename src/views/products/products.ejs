@@ -7,141 +7,35 @@
     <body>
         <!-- Include Header -->
         <%- include('../partials/header') %>
+        
+        <%- include('../partials/selectProduct') %>
+        
 
         <main>
 
-            <section class="home-product">
-                <h3>Palitos</h3>
-                <div class="products">
-                    <article class="item">
-                        <h4 class="description">Palito frutal Naranja</h4>
-                        <a href="/products/detail/palito-naranja"><img src="images/products/palito-naranja.png" alt="Palito frutal Naranja" ></a>
-                        <div class="main-article">
-                                <p class="price">$100</p>
-                        </div>
-                    </article>
-                    <article class="item">
-                        <h4 class="description">Palito Frutal Frutilla</h4>
-                        <img src="images/products/palito-frutilla.png" alt="Palito Frutal Frutilla">
-                        <div class="main-article">
-                            <p class="price">$100</p>
-                        </div>
-                    </article>
-                    <article class="item">
-                        <h4 class="description">Palito Frutal Limón</h4>
-                        <img src="images/products/palito-limon.png" alt="PPalito Frutal Limón">
-                        <div class="main-article">
-                            <p class="price">$100</p>
-                        </div>
-                    </article>
-                    <article class="item">
-                        <h4 class="description">Palito Bombón</h4>
-                        <img src="images/products/palito-bombon.png" alt="Palito Bombón4">
-                        <div class="main-article">
-                            <p class="price">$100</p>
-                        </div>
-                    </article>
-                </div>
-            </section>
-            <section class="home-product">
-                <h3>Bombones</h3>
-                <div class="products">
-                    <article class="item">
-                        <h4 class="description">Bombón Crocante</h4>
-                        <img src="images/products/bombon-crocante.png" alt="Bombón Crocante" >
-                        <div class="main-article">
-                            <p class="price">$100</p>
-                        </div>
-                    </article>
-                    <article class="item">
-                        <h4 class="description">Bombón Suizo</h4>
-                        <img src="images/products/bombon-suizo.png" alt="Bombón Suizo" >
-                        <div class="main-article">
-                            <p class="price">$100</p>
-                        </div>
-                    </article>
-                    <article class="item">
-                        <h4 class="description">Bombón Escocés</h4>
-                        <img src="images/products/bombon-escoces.png" alt="Bombón Escocés" >
-                        <div class="main-article">
-                            <p class="price">$100</p>
-                        </div>
-                    </article>
-                    <article class="item">
-                        <h4 class="description">Bombón Split</h4>
-                        <img src="images/products/bombon-split.png" alt="Bombón Split" >
-                        <div class="main-article">
-                            <p class="price">$100</p>
-                        </div>
-                    </article>
-                </div>  
-            </section>
-            <section class="home-product">
-                <h3>Postres</h3>
-                <div class="products">
-                    <article class="item">
-                        <h4 class="description">Almendrado</h4>
-                        <img src="images/products/almendrado.png" alt="almendrado">
-                        <div class="main-article">
-                            <p class="price">$100</p>
-                        </div>
-                    </article>
-                    <article class="item">
-                        <h4 class="description">Cassata</h4>
-                        <img src="images/products/cassata.png" alt="cassata">
-                        <div class="main-article">
-                            <p class="price">$100</p>
-                        </div>
-                    </article>
-                    <article class="item">
-                        <h4 class="description">Crocantino</h4>
-                        <img src="images/products/crocantino.png" alt="crocantino 7">
-                        <div class="main-article">
-                            <p class="price">$100</p>
-                        </div>
-                    </article>
-                    <article class="item">
-                        <h4 class="description">Delicia</h4>
-                        <img src="images/products/delicia.png" alt="delicia">
-                        <div class="main-article">
-                            <p class="price">$100</p>
-                        </div>
-                    </article>
-                </div>  
-            </section>
 
+            <h3>Todos los productos</h3>
+
+            
             <section class="home-product">
-                <h3>Tortas heladas</h3>
+
                 <div class="products">
+                    
+                    <% products.forEach(function(products){%>
+
                     <article class="item">
-                        <h4 class="description">Lemonpie</h4>
-                        <img src="images/products/lemonpie.png" alt="Lemonpie">
+                        
+                        <h4 class="description"><%= products.name %></h4>
+                        <a href="/products/detail/<%= products.id %>"><img src="/images/products/<%= products.image %>" alt="Palito frutal Naranja" ></a>
                         <div class="main-article">
-                            <p class="price">$100</p>
+                                <p class="price">$<%= products.price %></p>
                         </div>
+                        
                     </article>
-                    <article class="item">
-                        <h4 class="description">Cheesecake</h4>
-                        <img src="images/products/cheesecake.png" alt="Cheesecake">
-                        <div class="main-article">
-                            <p class="price">$100</p>
-                        </div>
-                    </article>
-                    <article class="item">
-                        <h4 class="description">Chocotorta</h4>
-                        <img src="images/products/semifriochocolate.png" alt="Chocotorta">
-                        <div class="main-article">
-                            <p class="price">$100</p>
-                        </div>
-                    </article>
-                    <article class="item">
-                        <h4 class="description">Tiramisu</h4>
-                        <img src="images/products/tiramisu.png" alt="Tiramisu">
-                        <div class="main-article">
-                            <p class="price">$100</p>
-                        </div>
-                    </article>
-                </div>  
+
+                    <% }) %>
+                    
+                </div>
             </section>
 
         </main>
