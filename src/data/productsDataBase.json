@@ -190,17 +190,6 @@
   "description": "Torta sabor mascarpone, con bizcochuelo de vainilla y almíbar decorado con pulpa de frutos del bosque.",
   "image": "semifriochocolate.png",
   "image2": "informacion-nurtricional.png"
- },
- {
-  "id": 17,
-  "name": "Prueba",
-  "price": 500,
-  "pack": 6,
-  "stock": 50,
-  "discount": 15,
-  "category": "Palitos",
-  "description": "palito zandia",
-  "image": "palito-zandia.png",
-  "image2": "informacion-nurtricional.png"
  }
+
 ]
