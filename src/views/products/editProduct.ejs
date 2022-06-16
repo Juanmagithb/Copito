@@ -19,32 +19,32 @@
                     <div class="form1">
                         <form action="/products/edit/<%= productToEdit.id %>?_method=PATCH" method="POST" enctype="multipart/form-data" >
 
-                                <div class="col-12 col-md-6">
+                                <div>
                                     <label for="name" class="form-label">Nombre del producto:</label>
                                     <input type="text" id="name" name="name"  class="form-input" value="<%= productToEdit.name %>">
                                 </div>
                                 <br>
-                                <div class="col-12 col-md-6">
+                                <div>
                                     <label for="price" class="form-label">Precio del producto:</label>
                                     <input type="number" id="price" name="price"  class="form-input" value="<%= productToEdit.price %>">
                                 </div>
                                 <br>
-                                <div class="col-12 col-md-6">
-                                    <label for="discount" class="form-label">Unidades por pack:</label>
+                                <div>
+                                    <label for="pack" class="form-label">Unidades por pack:</label>
                                     <input type="number" id="pack" name="pack"  class="form-input" value="<%= productToEdit.pack %>">
                                 </div>
                                 <br>
-                                <div class="col-12 col-md-6">
-                                    <label for="discount" class="form-label">Stock a cargar:</label>
+                                <div>
+                                    <label for="stock" class="form-label">Stock a cargar:</label>
                                     <input type="number" id="stock" name="stock"  class="form-input" value="<%= productToEdit.stock %>">
                                 </div>
                                 <br>
-                                <div class="col-12 col-md-6">
+                                <div>
                                     <label for="discount" class="form-label">Descuento:</label>
                                     <input type="number" id="discount" name="discount"  class="form-input" value="<%= productToEdit.discount %>">
                                 </div>
                                 <br>
-                                <div class="col-12 col-md-6">
+                                <div>
                                     <label for="category" class="form-label">Categoría:</label>
                                     <select name="category" id="category" class="form-input" >
                                         <option value=""><%= productToEdit.category %></option>
@@ -55,14 +55,14 @@
                                     </select>
                                 </div>
                                 <br>
-                                <div class="col-12">
+                                <div>
                                     <label for="description" class="form-label">Descipción:</label>
                                     <textarea name="description" id="description" class="form-input"><%= productToEdit.description %></textarea>
                                 </div>
                                 <br>
                                 <div class="product-img">
-                                    <label for="user-img"><h2>Imagen del producto</h2></label><br>
-                                    <input type="file" name="product-imgage" id="image">
+                                    <label for="productImage"><h2>Imagen del producto</h2></label><br>
+                                    <input type="file" name="productImage" id="productImage">
                                 </div>
                                 <br>
                                 <div class="button2">

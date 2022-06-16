@@ -6,7 +6,7 @@ const path = require("path");
 
 // ************ Controller Require ************
 const productsController = require('../controllers/productsController');
-
+const isAdmin = require('../middlewares/isAdmin');
 
 // ************ Multer config ************
 const storage = multer.diskStorage({
@@ -32,12 +32,12 @@ router.get('/postres', productsController.postres);
 router.get('/detail/:id', productsController.detail); 
 
 /*** CREATE ONE PRODUCT ***/
-router.get('/create', productsController.create); 
-router.post('/', upload.single("image"), productsController.store);
+router.get('/create',isAdmin, productsController.create); 
+router.post('/',isAdmin, upload.single("productImage"), productsController.store);
 
 /*** EDIT ONE PRODUCT ***/ 
-router.get('/edit/:id', productsController.edit); 
-router.patch('/edit/:id', upload.single("product-image"), productsController.update); 
+router.get('/edit/:id',isAdmin, productsController.edit); 
+router.patch('/edit/:id',isAdmin, upload.single("productImage"), productsController.update); 
 
  /*** DELETE ONE PRODUCT***/ 
 router.delete('/delete/:id', productsController.destroy);

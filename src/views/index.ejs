@@ -18,20 +18,35 @@
                 <div class="products">
                     
                     <% products.forEach(function(products){%>
-                    <% if(products.discount>0){%> 
-                    <article class="item">
-                        
-                        <h4 class="description"><%= products.name %></h4>
-                        <a href="/products/detail/<%= products.id %>"><img src="/images/products/<%= products.image %>" alt="Palito frutal Naranja" ></a>
-                        <div class="main-article">
-                                <p class="price2">$
-                                    <%= products.price * ((100 - products.discount)/ 100).toFixed(0)%>
-                                </p>
-                                <span><%= products.discount %> %OFF</span>
-                        </div>
-                        
-                    </article>
-                    <% } %>
+                        <% if(products.discount>0){%> 
+                            <% if(userLog.category === "Seller"){%> 
+                            <article class="item">
+                                
+                                <h4 class="description"><%= products.name %></h4>
+                                <a href="/products/detail/<%= products.id %>"><img src="/images/products/<%= products.productImage %>" alt="Palito frutal Naranja" ></a>
+                                <div class="main-article">
+                                        <p class="price2">$
+                                            <%= (products.price * ((80 - products.discount)/ 100)).toFixed()%>
+                                        </p>
+                                        <span><%= products.discount +20 %> %OFF</span>
+                                </div>
+                                
+                            </article>
+                            <% }else{ %>
+                                <article class="item">
+                                
+                                    <h4 class="description"><%= products.name %></h4>
+                                    <a href="/products/detail/<%= products.id %>"><img src="/images/products/<%= products.productImage %>" alt="Palito frutal Naranja" ></a>
+                                    <div class="main-article">
+                                            <p class="price2">$
+                                                <%= (products.price * ((100 - products.discount)/ 100)).toFixed()%>
+                                            </p>
+                                            <span><%= products.discount%> %OFF</span>
+                                    </div>
+                                    
+                                </article>
+                            <% } %>    
+                        <% } %>
                     <% }) %>
                     
                 </div>

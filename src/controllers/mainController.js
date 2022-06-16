@@ -4,25 +4,31 @@ const path = require('path');
 const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
+
+
 const controller = {
 	index: (req, res) => {
-		res.render('index',{
-			products
-		});
-	},
 
-    login: (req, res) => {
-        res.render('./users/login');
-    },
+		if(req.session.userLogged){
+			let userLog = req.session.userLogged;
+			res.render('index',{
+				products, userLog
+			});
+		}
+		else{
 
-    register: (req, res) => {
-        res.render('./users/register');
-    },
+			let userLog = [{
+				category: 'User'
+			}];
 
-    cart: (req, res) => {
-        res.render('./users/cart');
-    },
+			res.render('index',{
+				products,userLog
+			});
 
-};
+		}
+
+
+}
+}
 
 module.exports = controller;

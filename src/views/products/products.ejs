@@ -26,10 +26,25 @@
                     <article class="item">
                         
                         <h4 class="description"><%= products.name %></h4>
-                        <a href="/products/detail/<%= products.id %>"><img src="/images/products/<%= products.image %>" alt="Palito frutal Naranja" ></a>
+                        <a href="/products/detail/<%= products.id %>"><img src="/images/products/<%= products.productImage %>" alt="Palito frutal Naranja" ></a>
+
+                        
                         <div class="main-article">
-                                <p class="price">$<%= products.price %></p>
+
+                            
+                            <p class="price">$
+
+                                
+
+                                <%= products.price%>
+
+                                
+
+                            </p>
+
+
                         </div>
+
                         
                     </article>
 

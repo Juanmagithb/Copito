@@ -9,35 +9,40 @@
         <%- include('../partials/header') %>
        
         <main class="register">
-            <form action="/" method="POST" class="formreg">
+            <form action="/users" method="POST" class="formreg" enctype="multipart/form-data">
 
                     <br><h4>Datos del usuario</h4><br>
 
-                    <div class="zone"><input type="text" name="name" placeholder="Nombre y apellido" required minlength="8"></div>
+                    <div class="zone"><input type="text" name="firstName" placeholder="Nombre" required ></div>
+                    <!-- minlength="8" -->
+                    <div class="zone"><input type="text" name="lastName" placeholder="Apellido" required></div>
 
-                    <div class="zone"><input type="text" name="user" placeholder="Nombre de usuario" required></div>
+                    <div class="zone"><input type="text" name="phoneNumber" placeholder="Telefono" required></div>
 
                     <div class="zone"><input type="email" name="email" placeholder="E-mail" required></div>
 
-                    <div class="zone"><input type="text" name="addres" placeholder="Domicilio" required></div>
-
-                    <div class="birthdate">    
-                        <br>
-                        <label for="birth_date"><h4>Fecha de nacimiento</h4></label><br>
-                        <br>
-                        <input type="date" name="birth_date" id="birth_date" required>
-                        <br>
+                    <div class="zone2">
+                        <label for="category" class="form-label"><h4>Categoría de usuario:</h4></label>
+                        <select name="category" id="category" required>
+                            <option>Elegí el tipo de usuario</option>
+                            <option value="User">User</option>
+                            <option value="Seller">Seller</option>
+                            <option value="Admin">Admin</option>
+                        </select>
                     </div>
 
-                    <br>
-                    
 
                     <div class="zone">
-                        <input type="password" placeholder="Contraseña" required>
+                        <input type="password" name="password" placeholder="Contraseña" required>
                     </div>
     
-                    <div class="zone">
-                        <input type="password" placeholder="Confirmar contraseña" required>
+                    <!-- <div class="zone">
+                        <input type="password" name="password" placeholder="Confirmar contraseña" required>
+                    </div> -->
+
+                    <div class="zone2">
+                        <label for="userImage"><h4>Imagen de perfil</h4></label><br>
+                        <input type="file" name="userImage" id="userImage">
                     </div>
 
                     

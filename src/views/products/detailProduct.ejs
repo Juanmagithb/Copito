@@ -14,7 +14,7 @@
                 <h3 class="titulo2"><%= product.name %></h3>
                 <div class="inf-product">
                     
-                        <img src="/images/products/<%= product.image %>" alt="Palito frutal Naranja" class = "info-img1">
+                        <img src="/images/products/<%= product.productImage %>" alt="Palito frutal Naranja" class = "info-img1">
                         <img src="/images/products/<%= product.image2 %>" alt="Palito frutal Naranja" class = "info-img2">
                 </div>
 
@@ -41,24 +41,28 @@
                 <i class="fas fa-cart-plus"></i>
                 </div>
 
-                <div class="button3">
-                        
+                <% if(userLog.category === "Admin") {%> 
                     
-                    <div class="editbutton">
-                        <form>
-                            <button ><a href="/products/edit/<%= product.id %>">Editar producto</a></button>
-                        </form>
-                    </div> 
+                    <div class="button3">
+                            
+                            <div class="editbutton">
+                                <form>
+                                    <button ><a href="/products/edit/<%= product.id %>">Editar producto</a></button>
+                                </form>
+                            </div> 
 
-                    <div class="erasebutton2">
+                            <div class="erasebutton2">
+                                
+                                <form action="/products/delete/<%= product.id %>?_method=DELETE" method="POST">
+                                    <button type="submit">Eliminar producto</button>
+                                </form>
+
+                            </div>
                         
-                        <form action="/products/delete/<%= product.id %>?_method=DELETE" method="POST">
-							<button type="submit">Eliminar producto</button>
-						</form>
 
                     </div>
-                
-                </div>
+
+                <% } %> 
 
         </main>
 

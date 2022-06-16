@@ -1,0 +1,32 @@
+[
+    {
+     "id": 6,
+     "firstName": "seller",
+     "lastName": "seller",
+     "phoneNumber": 1164479730,
+     "email": "seller@gmail.com",
+     "password": "$2a$10$sIfLfNt9t1w76rj.3bjcU.9VZ2A3aw.IRw4pG50bP4OgA2DqiZuve",
+     "category": "Seller",
+     "userImage": "default.png"
+    },
+    {
+     "id": 7,
+     "firstName": "user",
+     "lastName": "user",
+     "phoneNumber": 1164479730,
+     "email": "user@gmail.com",
+     "password": "$2a$10$sIwFaOgI2JDm8pEY.KEJnOW5vqnxDfZ0ys24nSq3zbqcN8jsySe7m",
+     "category": "User",
+     "userImage": "default.png"
+    },
+    {
+     "id": 8,
+     "firstName": "Admin",
+     "lastName": "Admin",
+     "phoneNumber": "1164479730",
+     "email": "admin@gmail.com",
+     "password": "$2a$10$sIwFaOgI2JDm8pEY.KEJnOW5vqnxDfZ0ys24nSq3zbqcN8jsySe7m",
+     "category": "Admin",
+     "userImage": "default.png"
+    }
+   ]

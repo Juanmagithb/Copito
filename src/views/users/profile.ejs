@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+        <!-- Include Head -->
+        <%- include('../partials/head', {title: 'Login'}) %>
+        <link rel="stylesheet" href="/css/login.css">
+        <link rel="stylesheet" href="/css/product.css">
+
+    <body>
+        <!-- Include Header -->
+        <%- include('../partials/header') %>
+
+        <main>
+            <h3 class="titulo2">Hola <%= userLog.firstName %> ya estas logueado!</h3>
+        
+
+
+            <div class="form0">
+
+                <img src="/images/products/ice-crean.gif" alt="Helado de carga" class="ice-cream-load1">
+
+                <div class="form2">
+                    <form>
+
+                        
+                        <div class="userI"><div class="userI2"><img src="/images/users/<%= userLog.userImage %>" alt="User Photo" ></div></div>
+                       
+                        <br>
+
+                        <div class="chargebutton2"><div class="chargebutton3"><button><a href="/users/editProfile">Editar datos de usuario</button></a></div></div>
+
+
+                    </form>
+
+
+                        <% if(userLog.category == "Admin") {%> 
+
+                        <div class="chargebutton2"><div class="chargebutton3"><button><a href="/products/create">Cargar un nuevo producto</a></button></div></div>
+                            
+                        <% } %> 
+
+                        <div class="chargebutton2"><div class="chargebutton3"><button><a href="/users/logOut">Log Out</a></button></div></div>
+
+                </div>    
+                
+                <img src="/images/products/ice-crean.gif" alt="User Photo" class="ice-cream-load2">
+                    
+             </div>
+
+
+                
+         
+
+    </main>
+
+        <!-- Include Footer -->
+        <%- include('../partials/footer') %>
+
+        <!-- Include Scripts -->
+        <%- include('../partials/scripts') %>
+
+    </body>
+
+</html>

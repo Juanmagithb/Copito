@@ -10,11 +10,22 @@
 
         <main class="login">
 
-            <form action="/" method="POST" class="formlog">
+            <form action="/users/login" method="POST" class="formlog">
 
-                <div class ="zone"><input type="text" name="user" placeholder="Nombre de usuario" required></div>
+                
+                <div class ="zone"><input type="text" name="email" placeholder="Mail de usuario" required></div>
 
-                <div class ="zone"><input type="password" name="pass" placeholder="Elegí tu contraseña" required></div>
+                    <% if(locals.errors && errors.email){%>
+                        <div class="dangermsg"><%= errors.email.msg %></div>
+                        <br>
+                    <%}%>
+
+                <div class ="zone"><input type="password" name="password" placeholder="Contraseña" required></div>
+
+                <% if(locals.errors && errors.password){%>
+                    <div class="dangermsg"><%= errors.password.msg %></div>
+                    <br>
+                <%}%>
 
                 <div>
                     <input type="checkbox" name="rec" value="a" id="a" class="otro">
@@ -26,7 +37,9 @@
 
 
                 <a href="/"><h5 class="otro">¿Olvidaste tu clave?</h5></a>
-
+                <br>
+                <a href="/users/Register"><h5 class="otro">¿No tenes cuenta? Registrate aca</h5></a>
+                
             </form>
 
         </main>

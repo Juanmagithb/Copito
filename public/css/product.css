@@ -118,6 +118,7 @@ display: flex;
 .button2{
     display: flex;
     justify-content: space-between;
+    
 }
 
 .button3{
@@ -147,6 +148,7 @@ display: flex;
 }
 
 .chargebutton, .erasebutton{
+    display: flex;
     width: 45%;
 }
 

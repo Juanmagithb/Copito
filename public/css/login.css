@@ -25,7 +25,9 @@
 
 }
 
-
+.dangermsg{
+    color: #e92e63;
+}
 .zone input{
     width: 100%;
     padding: 0.75rem 0;
@@ -55,6 +57,67 @@
 
 }
 
+.userI{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.userI2{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.form2{
+    display: flex;
+    color: #5b3363;
+    font-size: 20px;    
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    /* flex-direction: column;  */
+}
+
+
+
+
+.chargebutton2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.chargebutton3{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+    
+}
+.chargebutton3 a{
+    text-decoration: none;
+    color: #E0ECEC;
+}
+
+
+.chargebutton2 button{
+    width: 100%;
+    padding: 0.75rem;
+    background-color:#5b3363;
+    border-radius: 4px;
+    color: #E0ECEC;
+}
+
+
+.chargebutton2:hover button{
+    background-color: #e92e63;
+    cursor: pointer;
+}  
+
+
 /* Media Queries DESKTOP */
 
 @media (min-width: 769px){
@@ -68,5 +131,20 @@
         width: 15%;
     
     }
+
+    .chargebutton3{
+        width: 20%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .userI2{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    
+    }
+
+
 
 }

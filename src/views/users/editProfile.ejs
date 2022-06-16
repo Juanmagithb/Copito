@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+        <!-- Include Head -->
+        <%- include('../partials/head', {title: 'Login'}) %>
+        <link rel="stylesheet" href="/css/login.css">
+        <link rel="stylesheet" href="/css/product.css">
+
+    <body>
+        <!-- Include Header -->
+        <%- include('../partials/header') %>
+
+        <main>
+            <h3 class="titulo2">Hola <%= userLog.firstName %></h3>
+        
+
+
+            <div class="form0">
+                <img src="/images/products/ice-crean.gif" alt="Helado de carga" class="ice-cream-load1">
+
+                <div class="form1">
+                    <form action="/users/editProfile/<%= userLog.id %>?_method=PATCH" method="POST" enctype="multipart/form-data" >
+
+                            <div>
+                                <label for="firstName" class="form-label">Nombre:</label>
+                                <input type="text" id="firstName" name="firstName"  class="form-input" value="<%= userLog.firstName %>" required>
+                            </div>
+                            <br>
+                            <div>
+                                <label for="lastName" class="form-label">Apellido:</label>
+                                <input type="text" id="lastName" name="lastName"  class="form-input" value="<%= userLog.lastName %>" required>
+                            </div>
+                            <br>
+                            <div>
+                                <label for="phoneNumber" class="form-label">Numero de telefono:</label>
+                                <input type="number" id="phoneNumber" name="phoneNumber"  class="form-input" value="<%= userLog.phoneNumber %>" required>
+                            </div>
+                            <br>
+                            <div>
+                                <label for="email" class="form-label">Email:</label>
+                                <input type="text" id="email" name="email"  class="form-input" value="<%= userLog.email %>" required>
+                            </div>
+                            <br>
+                            <div>
+                                <label for="password" class="form-label">Nueva password:</label>
+                                <input type="text" id="password" name="password"  class="form-input" placeholder="Nueva password">
+                            </div>
+                            <br>
+                            <div>
+                                <label for="category" class="form-label">Categoría:</label>
+                                <select name="category" id="category" class="form-input" >
+                                    <option value=""><%= userLog.category %></option>
+                                    <option value="User">User</option>
+                                    <option value="Seller">Seller</option>
+                                    <option value="Admin">Admin</option>
+                                </select>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="product-img">
+                                <label for="userImage"><h2>Cargar nueva imagen</h2></label><br>
+                                <input type="file" name="userImage" id="userImage">
+                            </div>
+                            <br>
+                            <div class="button2">
+                    
+                                <div class="chargebutton"><button type="submit" >Guardar</button></div>
+
+                                <div class="erasebutton"><button type="reset">Borrar</button></div>   
+                                
+                            </div>
+
+                        </div>
+
+                    </form>
+
+                    <img src="/images/users/<%= userLog.userImage %>" alt="User Photo" class="ice-cream-load1">
+                    
+                </div>
+
+
+                
+         
+
+    </main>
+
+        <!-- Include Footer -->
+        <%- include('../partials/footer') %>
+
+        <!-- Include Scripts -->
+        <%- include('../partials/scripts') %>
+
+    </body>
+
+</html>

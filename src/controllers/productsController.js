@@ -3,15 +3,34 @@ const path = require('path');
 
 const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+
+
+
+
 const controller = {
 
-
-	// Root - Show all products
+	//  Show all products
 	index: (req, res) => {
 
-		res.render('./products/products',{
-			products
-		});
+		if(req.session.userLogged){
+			let userLog = req.session.userLogged;
+
+			res.render('./products/products',{
+				products, userLog
+			});
+		}
+		else{
+
+			let userLog = [{
+					category: 'User'
+			}];
+
+			res.render('./products/products',{
+					products, userLog
+			});
+		}
+
+
 	},
 	
 	// Show all Palitos
@@ -44,12 +63,31 @@ const controller = {
 	},
 
 	// Detail - Detail from one product
+	
 	detail: (req, res) => {
-		let id = req.params.id
-		let product = products.find(product => product.id == id)
-		res.render('./products/detailProduct',{
-			product
-		});
+		if(req.session.userLogged){
+			let userLog = req.session.userLogged;
+			let id = req.params.id
+			let product = products.find(product => product.id == id)
+			res.render('./products/detailProduct',{
+				product,userLog
+			});
+
+
+		}
+
+		else{ 
+			let userLog = [{
+					category: 'User'
+			}];
+			let id = req.params.id
+			let product = products.find(product => product.id == id)
+			res.render('./products/detailProduct',{
+				product,userLog
+			});
+
+		}
+
 	},
 	// Create - Form to create
 	create: (req, res) => {
@@ -67,8 +105,9 @@ const controller = {
 			discount: parseInt(req.body.discount),
 			category: req.body.category,
 			description: req.body.description,
-			image: req.file ? req.file.filename : "default-image.png",
-			image2: req.file ? req.file.filename : "informacion-nurtricional.png"
+			productImage: req.file ? req.file.filename : "default-image.png",
+			// image2: req.file ? req.file.filename : "informacion-nurtricional.png"
+			image2: "informacion-nurtricional.png"
 		}
 
 		products.push(nuevoProducto);
@@ -98,8 +137,9 @@ const controller = {
 			category: req.body.category,
 			description: req.body.description,
 			/* ...req.body, */
-			image: req.file ? req.file.filename : productToEdit.image,
-			image2: req.file ? req.file.filename : "informacion-nurtricional.png"
+			productImage: req.file ? req.file.filename : productToEdit.productImage,
+			// image2: req.file ? req.file.filename : "informacion-nurtricional.png"
+			image2: "informacion-nurtricional.png"
 		}
 
 		let indice = products.findIndex(product => {
