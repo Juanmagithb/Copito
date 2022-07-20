@@ -1,0 +1,3 @@
+insert into users (id, firstName, lastName, phoneNumber, email, password, categoryId, userImage) values (1, 'Zitella', 'Revitt', 1164479730, 'seller@gmail.com', '$2a$10$sIfLfNt9t1w76rj.3bjcU.9VZ2A3aw.IRw4pG50bP4OgA2DqiZuve', 2, 'default.png');
+insert into users (id, firstName, lastName, phoneNumber, email, password, categoryId, userImage) values (2, 'Shari', 'Tainton', 1164479730, 'user@gmail.com', '$2a$10$sIwFaOgI2JDm8pEY.KEJnOW5vqnxDfZ0ys24nSq3zbqcN8jsySe7m', 3, 'default.png');
+insert into users (id, firstName, lastName, phoneNumber, email, password, categoryId, userImage) values (3, 'Truman', 'Rakes', 1164479730, 'admin@gmail.com', '$2a$10$sIwFaOgI2JDm8pEY.KEJnOW5vqnxDfZ0ys24nSq3zbqcN8jsySe7m', 1, 'default.png');

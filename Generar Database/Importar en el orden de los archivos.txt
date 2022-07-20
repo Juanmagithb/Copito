@@ -1,0 +1,7 @@
+Order de importacion: 
+
+01 structure.sql
+02 productsType.sql
+03 products.sql
+04 usersType.sql
+05 users.sql

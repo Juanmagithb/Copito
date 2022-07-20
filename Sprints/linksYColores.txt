@@ -1,8 +1,0 @@
-Colores posibles
-
-Amarillo #FFD639
-Naranja #F86624
-Verde #00C49A
-Otro #156064
-
-https://coolors.co/
